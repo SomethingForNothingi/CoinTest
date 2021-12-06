@@ -1,1 +1,5 @@
-package coin
+package main
+
+func main() {
+	
+}
