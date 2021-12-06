@@ -11,3 +11,8 @@ func (bc *BlockChain) AddBlock(data string) {
 	newBlock := NewBlock(data, prevBlock.Hash)
 	bc.Blocks = append(bc.Blocks, newBlock)
 }
+
+// NewBlockChain 创建新的区块链
+func NewBlockChain() *BlockChain {
+	return &BlockChain{[]*Block{NewGenesisBlock()}}
+}
